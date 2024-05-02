@@ -1,4 +1,4 @@
-# EST (Education & Shop Tani) README
+# EST (Education & Shop Tani)
 ## Deskripsi Aplikasi
 EST (Education & Shop Tani) adalah sebuah platform inovatif yang menyatukan fungsi edukasi dan perdagangan pertanian dalam satu tempat. Tujuannya adalah untuk membantu petani dengan menyediakan informasi dan peralatan pertanian yang diperlukan.
 
