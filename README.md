@@ -4,13 +4,21 @@ EST (Education & Shop Tani) adalah sebuah platform inovatif yang menyatukan fung
 
 ## Fitur-fitur Utama
 Fitur Edukasi: Materi edukasi terstruktur dengan fitur "Load More".
+
 Fitur Komentar: Interaksi pengguna melalui komentar.
+
 Fitur Shop: Menyediakan berbagai produk pertanian.
+
 Fitur Cart: Tempat penyimpanan barang yang ingin dibeli.
+
 Fitur Check Out: Proses pembayaran untuk pembelian.
+
 Tampilan Admin: Akses masuk untuk admin.
+
 Fitur Admin Edukasi: Mengelola materi edukasi.
+
 Fitur Admin Shop: Mengelola produk dan pesanan.
+
 Relasi Database: Struktur basis data aplikasi.
 
 ## Cara Menggunakan Aplikasi
@@ -22,8 +30,11 @@ Untuk akses admin, gunakan halaman login admin dengan kredensial yang telah dite
 
 ## Teknologi yang Digunakan
 Frontend: HTML, CSS, JavaScript, Bootstrap
+
 Backend: PHP NATIVE
+
 Database: MySQL
+
 Framework: Tidak ada
 
 ## Kontribusi
@@ -31,5 +42,7 @@ Kami menyambut kontribusi dari berbagai pihak. Silakan buka isu untuk saran atau
 
 ## Tim Pengembang
 Muhammad Taqiyuddin Al Farras (222410102024)
+
 Listya Dwi Subagya (222410102054)
+
 Faith Reyhan (222410102082)
