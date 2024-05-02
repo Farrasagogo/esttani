@@ -35,8 +35,6 @@ Backend: PHP NATIVE
 
 Database: MySQL
 
-Framework: Tidak ada
-
 ## Kontribusi
 Kami menyambut kontribusi dari berbagai pihak. Silakan buka isu untuk saran atau masalah yang ditemui. Jika Anda ingin berkontribusi pada pengembangan kode, buat cabang baru dan ajukan pull request.
 
