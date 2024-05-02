@@ -1,0 +1,391 @@
+/* Reset CSS */
+body,
+h1,
+h2,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+/* Tampilan modern untuk input */
+.add-comment input[type="text"] {
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.add-comment input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Tampilan modern untuk tombol */
+.add-comment button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-comment button:hover {
+  background-color: #0056b3;
+}
+
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+/* Show it is fixed to the top */
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 10px;
+  overflow-x: hidden;
+  min-height: 75rem;
+  /* padding-top: 4.5rem; */
+}
+section {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+h2 {
+  color: #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+iframe {
+  width: 100%;
+  height: 550px;
+  border: 0;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+footer {
+  margin-top: 0;
+  text-align: center;
+  font-size: 0.8em;
+  color: #777;
+}
+
+.vid-describe {
+  margin: 15px 0;
+}
+
+.vid-describe p {
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: #5a5a5a;
+}
+
+.vid-describe h4 {
+  font-size: 14px;
+  color: #5a5a5a;
+  margin-top: 15px;
+}
+
+.add-comment {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.add-comment img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.add-comment input {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding-top: 10px;
+  background: transparent;
+}
+
+.old-comment {
+  padding-left: 55px;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.old-comment img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.old-comment h3 {
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.old-comment h3 span {
+  font-size: 12px;
+  color: #5a5a5a;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.old-comment .comment-action {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.old-comment .comment-action img {
+  border-radius: 0;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.old-comment .comment-action span {
+  margin-right: 20px;
+  color: #5a5a5a;
+}
+
+.old-comment .comment-action a {
+  color: #0000ff;
+}
+
+#comments {
+  margin-top: 20px;
+}
+
+.comment {
+  margin-bottom: 10px;
+}
+
+/* Additional CSS for Recommended Blogs */
+#recommended-blogs {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.blog-item {
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.blog-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.blog-item h3 {
+  margin-top: 10px;
+}
+
+.blog-item p {
+  color: #555;
+}
+
+/* Marketplace styling */
+#marketplace-list {
+  list-style: none;
+  padding: 0;
+}
+
+.marketplace-item {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.marketplace-item img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.marketplace-item h3 {
+  margin-top: 10px;
+}
+
+.marketplace-item p {
+  color: #555;
+}
+
+.marketplace-item button {
+  background-color: #4caf50; /* Green color for the button */
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.marketplace-item button:hover {
+  background-color: #45a049; /* Darker green color on hover */
+}
+
+.scroll {
+  margin: auto;
+  width: 1900px;
+  overflow: visible;
+}
+
+.scroll ul {
+  padding: 0;
+  display: flex;
+  border-radius: 10px;
+  animation: scroll 50s infinite linear;
+}
+
+.scroll ul:hover {
+  animation-play-state: paused;
+}
+
+.scroll li {
+  margin: 0 10px;
+  list-style: none;
+  position: relative;
+  border-radius: 10px;
+}
+
+.scroll img {
+  height: auto;
+  width: 300px;
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+  border-radius: 10px;
+  max-width: fit-content;
+}
+
+.scroll img:hover {
+  transform: scale(1.04);
+}
+
+@keyframes scroll {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: -100%;
+  }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  iframe {
+    height: 200px;
+  }
+
+  .marketplace-item img {
+    width: 60%;
+    height: auto;
+  }
+}

@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+  background: #fff;
+  /* background-image: url(<?= BASEURL; ?>img/alok-shenoy-5xYvAlKjxWY-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+.banner {
+  width: 100%;
+  /* height: 100vh; */
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1030; /* to prevent the navbar getting covered up by other content */
+  background-color: #117336;
+  width: 100%;
+  margin: auto;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo {
+  width: 5rem;
+  cursor: pointer;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 13px 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.services {
+  position: relative;
+  transition: all 0.5s;
+}
+
+.navbar .toggle {
+  display: none;
+  transition: all 0.5s linear;
+}
+
+.toggle.active {
+  display: flex;
+  position: absolute;
+  width: 10rem;
+  top: 100%;
+  left: 0;
+  margin-top: 1rem;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.5s linear;
+  border-radius: 7px;
+}
+
+.toggle li {
+  margin: 2rem 0;
+}
+
+.toggle li a {
+  font-size: 1.1rem;
+}
+
+.services ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.services ul li {
+  list-style: none;
+}
+
+.services ul li a {
+  color: #117336;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* blog */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.container .heading {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #117336;
+}
+
+.container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.container .box-container .box {
+  background: #88af50;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  display: none;
+}
+
+.container .box-container .box:nth-child(1),
+.container .box-container .box:nth-child(2),
+.container .box-container .box:nth-child(3) {
+  display: inline-block;
+}
+
+.container .box-container .box .image {
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.container .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+
+.container .box-container .box .content h3 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.container .box-container .box .content p {
+  font-size: 15px;
+  color: #f3f3f3;
+  line-height: 2;
+  padding: 15px 0;
+}
+
+.container .box-container .box .content .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background: #117336;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+}s
+
+.container .box-container .box .content .btn:hover {
+  background-color: #7ea512;
+  border-color: #f3f3f3;
+  color: #fff;
+}
+
+.container .box-container .box .content .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #334;
+}
+
+.container .box-container .box .content .icons span {
+  font-size: 14px;
+  color: #334;
+}
+
+.container .box-container .box .content .icons span i {
+  color: #fff;
+  padding-right: 5px;
+}
+
+#load-more {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 13px 30px;
+  border: 1px solid rgb(255, 255, 255);
+  color: #fff;
+  font-size: 16px;
+  background-color: #117336;
+  cursor: pointer;
+}
+
+#load-more:hover {
+  border: 1px solid #334;
+  background-color: #7ea512;
+  border-color: #334;
+  color: #fff;
+}
+
+@media (max-width: 450px) {
+  .container .heading {
+    font-size: 25px;
+  }
+
+  .container .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .container .box-container .box .image {
+    height: 200px;
+  }
+
+  .container .box-container .box .content p {
+    font-size: 12px;
+  }
+
+  .container .box-container .box .content .icons span {
+    font-size: 12px;
+  }
+}
